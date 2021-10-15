@@ -54,7 +54,7 @@
     font-size: 18px;
     background: var(--orange);
     color: var(--body-bg);
-    border: 5px solid var(--body-bg);
+    /* border: 5px solid var(--body-bg); */
     font-weight: 500;
     text-decoration: none;
     padding: var(--gap10) calc(var(--gap20)*2);

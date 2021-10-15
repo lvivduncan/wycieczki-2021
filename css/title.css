@@ -1,0 +1,18 @@
+.title
+{
+    text-align: center;
+    font-size: 52px;
+    margin: calc(var(--gap30)*4) 0;
+}
+
+.title ~ .lead
+{
+    margin: calc(var(--gap30)*4) 0 var(--gap20);
+}
+
+.lead
+{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+}

@@ -1,0 +1,12 @@
+#family
+{
+    padding: calc(var(--gap30)*2) 0;
+}
+
+#family .wrapper
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: var(--gap20);
+    align-items: center;
+}

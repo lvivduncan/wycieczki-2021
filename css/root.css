@@ -10,6 +10,14 @@
     --body-color: #010101;
     --body-bg: #fff;
 
+    --body-gray-bg: #f0f0f0;
+
+    --orange: #fa7100;
+    --yellow: #ffa600;
+
+    --gap10: 10px;
+    --gap20: 20px;
+    --gap30: 30px;
 }
 
 html,
@@ -27,8 +35,28 @@ body
     overflow-x: hidden;
 }
 
+img
+{
+    max-width:100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+p
+{
+    line-height: 1.6;
+}
+
 .wrapper
 {
     width: 1200px;
     margin: auto;
+}
+
+@media(max-width:1240px)
+{
+    .wrapper
+    {
+        width: 95%;
+    }
 }

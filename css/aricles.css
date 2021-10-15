@@ -1,0 +1,19 @@
+.articles
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: var(--gap30);
+}
+
+.article
+{
+    display: flex;
+    flex-flow: column;
+    gap: var(--gap20);
+}
+
+.article h1
+{
+    font-size: 28px;
+    line-height: 1.5;
+}

@@ -1,8 +1,15 @@
 #video
 {
-    width: 100%;
+    /* width: 100%; */
     height: 100vh;
     position: relative;
+    overflow: hidden;
+}
+
+#video video
+{
+    position: relative;
+    z-index: -1;
 }
 
 #video source
@@ -10,4 +17,49 @@
     height: 100vh;
     width: 100%;
     object-fit: cover;
+}
+
+#video .wrapper
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    gap: calc(var(--gap20)*2);
+    position: absolute;
+    z-index: 1;
+    color: var(--body-bg);
+    background: rgba(0,0,0,.5);
+    top: 0;
+    left: 0;
+}
+
+#video .wrapper h1
+{
+    font-size: 70px;
+    color: var(--body-bg);
+}
+
+#video .wrapper p
+{
+    font-size: 26px;
+}
+
+/* button */
+#video .wrapper a
+{
+    font-size: 18px;
+    background: var(--orange);
+    color: var(--body-bg);
+    text-decoration: none;
+    padding: var(--gap20) calc(var(--gap20)*2);
+    transition: .5s;
+}
+
+#video .wrapper a:hover,
+#video .wrapper a:focus
+{
+    background: var(--yellow);
 }

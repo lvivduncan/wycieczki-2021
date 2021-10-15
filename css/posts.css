@@ -1,0 +1,49 @@
+.posts
+{
+    display: grid;
+    /* grid-template-columns: repeat(2,1fr); */
+    grid-gap: var(--gap20);
+}
+
+.post
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,auto);
+    grid-template-areas: 
+        'post-picture post-h1'
+        'post-picture post-p';
+    grid-gap: var(--gap30);
+    align-items: center;
+}
+
+.post:nth-child(even)
+{
+    grid-template-areas: 
+        'post-h1 post-picture'
+        'post-p post-picture';
+    /* text-align: right; */
+}
+
+.post picture
+{
+    grid-area: post-picture;
+}
+
+.post picture img
+{
+    width: 100%;
+}
+
+.post h1
+{
+    grid-area: post-h1;
+    align-self: flex-end;
+    font-size: 32px;
+}
+
+.post p
+{
+    grid-area: post-p;
+    align-self: flex-start;
+}

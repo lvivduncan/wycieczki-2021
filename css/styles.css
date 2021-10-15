@@ -1,7 +1,28 @@
 @import url('./root.css');
 
-/**/
+/* фіксований хедер */
 @import url('./header.css');
 
-/**/
+/* автоплей на головній */
 @import url('./video.css');
+
+/* про нас на головній */
+@import url('./about.css');
+
+/* transport */
+@import url('./transport.css');
+
+/* Rodzinne dzielo */
+@import url('./family.css');
+
+/* заголовки блоків */
+@import url('./title.css');
+
+/* кнопка "далі" */
+@import url('./button.css');
+
+/* блоки по 4 елемента */
+@import url('./aricles.css');
+
+/* блоки по 2 елементи шахматкою */
+@import url('./posts.css');

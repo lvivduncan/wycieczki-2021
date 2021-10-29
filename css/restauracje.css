@@ -1,4 +1,33 @@
 #restauracje
 {
-    
+    padding: 0 0 calc(var(--gap30)*3);
+    margin: var(--gap30) 0 0;
+}
+
+#restauracje picture 
+{
+    height: 280px;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+#restauracje img
+{
+    transition: .5s;
+    display: block;
+    object-fit: cover;
+    width: 100%;
+}
+
+#restauracje a
+{
+    color: var(--body-color);
+    text-decoration: underline;
+    text-decoration: none;
+}
+
+#restauracje a:hover img
+{
+    transform: scale(1.1)
 }

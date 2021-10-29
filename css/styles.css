@@ -26,3 +26,9 @@
 
 /* блоки по 2 елементи шахматкою */
 @import url('./posts.css');
+
+/* Współpracujemy z hotelami */
+@import url('./hotel.css');
+
+/* Restauracje */
+@import url('./restauracje.css');

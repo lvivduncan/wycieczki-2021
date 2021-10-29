@@ -1,4 +1,4 @@
-.transport
+#transport
 {
-    
+    margin: calc(var(--gap30)*2) 0;
 }

@@ -17,3 +17,14 @@
     font-size: 28px;
     line-height: 1.5;
 }
+
+.article h1 a 
+{
+    color: var(--body-color);
+    transition: .5s;
+}
+
+.article h1 a:hover
+{
+    text-decoration: none;
+}

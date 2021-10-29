@@ -1,12 +1,107 @@
 #family
 {
-    padding: calc(var(--gap30)*2) 0;
+    padding: calc(var(--gap30)*4) 0;
+    background: var(--body-gray-bg);
 }
 
 #family .wrapper
 {
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    grid-gap: calc(var(--gap30)*4);
+    align-items: center;
+}
+
+/* лівий блок */
+#family figure {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr;
     grid-gap: var(--gap20);
     align-items: center;
+    justify-content: center;
+    min-height: 266px;
+    /* overflow: hidden; */
+    /* position: relative; */
+    /* top: -100px; */
+    transform: translateY(-100px);
+}
+
+#family picture 
+{
+    position: relative;
+    display: block;
+}
+
+/* третє фото накладається */
+#family figure picture:nth-child(3)
+{
+    position: absolute;
+    bottom: -80%;
+    width: 60%;
+    left: 20%;
+}
+
+/* правий блок */
+#family figcaption {
+    /* position: relative; */
+    height: 540px;
+    /* min-height: 574px; */
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+#family h1 
+{
+    font-size: 42px;
+    line-height: 1.23;
+    text-transform: uppercase;
+    margin: 0 0 var(--gap30);
+}
+
+#family h2 
+{
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0 0 var(--gap30);
+}
+
+/* по 3 фото в ряд */
+#family .gallery 
+{
+    width: 1200px;
+    margin: calc(var(--gap30)*2) auto 0;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: var(--gap30);
+}
+
+#family .gallery picture 
+{
+    text-align: center;
+}
+
+#family .gallery img
+{
+    border-radius: 50%;
+}
+
+#family .gallery h1 
+{
+    font-size: 22px;
+    line-height: 1.35;
+    text-transform: none;
+    margin: var(--gap10) 0;
+    text-align: center;
+}
+
+#family .gallery p 
+{
+    font-size: 14px;
+    line-height: 1.55;
+    font-weight: 300;
+    text-align: center;
 }

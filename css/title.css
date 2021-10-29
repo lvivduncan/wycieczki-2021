@@ -16,3 +16,20 @@
     font-size: 24px;
     font-weight: 300;
 }
+
+/* якщо є заголовок і лід */
+.heading 
+{
+    margin: calc(var(--gap30)*4) 0;
+}
+
+.heading .title
+{
+    margin: 0;
+}
+
+.heading .lead 
+{
+    margin: var(--gap30) auto;
+    width: 50%;
+}

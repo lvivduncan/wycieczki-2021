@@ -1,0 +1,62 @@
+#form 
+{
+    margin: 0 0 var(--gap30);
+}
+
+#form .wrapper 
+{
+    display: grid;
+    
+}
+
+#form label 
+{
+    display: block;
+    margin: 0 0 var(--gap30);
+}
+
+#form label input 
+{
+    width: 100%;
+    padding: var(--gap20);
+    border: 1px solid var(--body-gray-bg);
+    outline: none;
+    font-family: inherit;
+    color: var(--body-color);
+}
+
+#form textarea
+{
+    width: 100%;
+    padding: var(--gap20);
+    height: 110px;
+    resize: none;
+    border: 1px solid var(--body-gray-bg);
+    outline: none;
+}
+
+#form button
+{
+    cursor: pointer;
+
+    display: inline-block;
+    padding: var(--gap10) var(--gap30);
+    transition: .5s;
+    background: var(--orange);
+    color: var(--body-bg);
+    font-size: 18px;
+    /* text-decoration: none; */
+    outline: none;
+    border: none;
+}
+
+#form button:hover,
+#form button:focus
+{
+    background: var(--yellow);
+}
+
+.form-content
+{
+    text-align: right;
+}

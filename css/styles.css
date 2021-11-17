@@ -38,3 +38,9 @@
 
 /* photos */
 @import url('./gallery.css');
+
+/* Nowosci */
+@import url('./news.css');
+
+/* Kontakt */
+@import url('./form.css');

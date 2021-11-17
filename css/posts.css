@@ -22,7 +22,6 @@
     grid-template-areas: 
         'post-h1 post-picture'
         'post-p post-picture';
-    /* text-align: right; */
 }
 
 .post picture

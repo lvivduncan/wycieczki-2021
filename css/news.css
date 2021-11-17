@@ -1,0 +1,13 @@
+#news 
+{
+    padding: calc(var(--gap30)*3) 0 0;
+    margin: 0 0 var(--gap30);
+}
+
+.news 
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: var(--gap30);
+    margin: 0 0 calc(var(--gap30)*3)
+}

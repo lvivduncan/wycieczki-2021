@@ -12,6 +12,8 @@
 
     --body-gray-bg: #f0f0f0;
 
+    --body-gray-light-bg: #f9f9f9;
+
     --number: #a0a0a0;
 
     --orange: #b51b18;
@@ -47,6 +49,18 @@ img
 p
 {
     line-height: 1.6;
+}
+
+a
+{
+    text-decoration: underline;
+    text-decoration-color: var(--number);
+}
+
+a:hover,
+a:focus 
+{
+    text-decoration: none;
 }
 
 .wrapper

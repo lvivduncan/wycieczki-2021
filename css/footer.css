@@ -1,0 +1,11 @@
+#footer 
+{
+    padding: calc(var(--gap30)*3) 0;
+    background: var(--body-gray-bg);
+}
+
+#footer .wrapper 
+{
+    display: grid;
+    
+}

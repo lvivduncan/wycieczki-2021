@@ -1,0 +1,6 @@
+#copy 
+{
+    background: var(--body-gray-bg);
+    padding: var(--gap10);
+    text-align: center;
+}

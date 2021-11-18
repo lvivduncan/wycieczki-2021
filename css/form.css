@@ -60,3 +60,42 @@
 {
     text-align: right;
 }
+
+.form-content p
+{
+    margin: 0 0 var(--gap30);
+    font-size: 30px;
+}
+
+.form-content a 
+{
+    color: var(--body-color);
+    text-decoration: none;
+    display: inline-block;
+    transition: .5s;
+}
+
+/* mail */
+.form-content a[href^='mailto']
+{
+    font-style: italic;
+}
+
+/* phone */
+.form-content a[href^='tel']
+{
+    font-weight: 500;
+}
+
+.form-content a:hover,
+.form-content a:focus
+{
+    transform: scale(1.05);
+}
+
+.form-content svg 
+{
+    width: 40px;
+    height: 40px;
+    fill: var(--body-color);
+}

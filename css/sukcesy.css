@@ -46,7 +46,8 @@
     top: 0;
     font-size: 200px;
     font-weight: 700;
-    color: var(--number);
+    /* color: var(--number); */
+    color: var(--orange);
     opacity: 0.6;
     user-select: none;
 }

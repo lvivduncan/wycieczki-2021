@@ -5,6 +5,16 @@
     margin: calc(var(--gap30)*4) 0;
 }
 
+@media(max-width:776px)
+{
+    .title
+    {
+        /* text-align: center; */
+        font-size: 34px;
+        margin: var(--gap30) 0;
+    }    
+}
+
 .title ~ .lead
 {
     margin: calc(var(--gap30)*4) 0 var(--gap20);
@@ -17,10 +27,28 @@
     font-weight: 300;
 }
 
+/* @media(max-width:776px)
+{
+    .lead
+    {
+        text-align: center;
+        font-size: 24px;
+        font-weight: 300;
+    }    
+} */
+
 /* якщо є заголовок і лід */
 .heading 
 {
     margin: calc(var(--gap30)*4) 0;
+}
+
+@media(max-width:776px)
+{
+    .heading 
+    {
+        margin: var(--gap30) 0;
+    }    
 }
 
 .heading .title
@@ -32,4 +60,13 @@
 {
     margin: var(--gap30) auto;
     width: 50%;
+}
+
+@media(max-width:776px)
+{
+    .heading .lead 
+    {
+        /* margin: var(--gap30) auto; */
+        width: 95%;
+    }    
 }

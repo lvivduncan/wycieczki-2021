@@ -14,8 +14,8 @@
 
     --body-gray-light-bg: #f9f9f9;
 
-    /* --number: #a0a0a0; */
-    --number: #7e7e7e;
+    --number: #a0a0a0;
+    /* --number: #7e7e7e; */
 
     --orange: #b51b18;
     --yellow: #ffa600;
@@ -76,11 +76,4 @@ a:focus
     {
         width: 95%;
     }
-}
-
-.column-2
-{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: var(--gap30);
 }

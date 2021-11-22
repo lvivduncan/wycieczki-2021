@@ -47,6 +47,14 @@
     font-size: 26px;
 }
 
+@media(max-width:776px)
+{
+    #video .wrapper p
+    {
+        text-align: center;
+    }    
+}
+
 /* button */
 #video .wrapper a
 {

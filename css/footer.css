@@ -1,21 +1,37 @@
-#form 
+#footer
 {
     margin: 0 0 var(--gap30);
 }
 
-#form .wrapper 
+#footer .wrapper 
 {
     display: grid;
-    
+    grid-template-columns: repeat(2,1fr);
+    gap: var(--gap30);
 }
 
-#form label 
+@media(max-width:776px)
+{
+    #footer .wrapper 
+    {
+        /* display: grid; */
+        grid-template-columns: 1fr;
+        /* gap: var(--gap30); */
+    }
+    
+    #footer form 
+    {
+        order: 1;
+    }
+}
+
+#footer label 
 {
     display: block;
     margin: 0 0 var(--gap30);
 }
 
-#form label input 
+#footer input 
 {
     width: 100%;
     padding: var(--gap20);
@@ -23,9 +39,10 @@
     outline: none;
     font-family: inherit;
     color: var(--body-color);
+    transition: border .5s;
 }
 
-#form textarea
+#footer textarea
 {
     width: 100%;
     padding: var(--gap20);
@@ -35,7 +52,13 @@
     outline: none;
 }
 
-#form button
+#footer input:focus,
+#footer textarea:focus 
+{
+    border-color: var(--number)
+}
+
+#footer button
 {
     cursor: pointer;
 
@@ -50,8 +73,8 @@
     border: none;
 }
 
-#form button:hover,
-#form button:focus
+#footer button:hover,
+#footer button:focus
 {
     background: var(--yellow);
 }
@@ -61,10 +84,28 @@
     text-align: right;
 }
 
+@media(max-width:776px)
+{
+    .form-content
+    {
+        order: 2;
+        text-align: center;
+    }    
+}
+
 .form-content p
 {
     margin: 0 0 var(--gap30);
     font-size: 30px;
+}
+
+@media(max-width:776px)
+{
+    .form-content p
+    {
+        /* margin: 0 0 var(--gap30); */
+        font-size: 22px;
+    }    
 }
 
 .form-content a 
@@ -99,3 +140,4 @@
     height: 40px;
     fill: var(--body-color);
 }
+

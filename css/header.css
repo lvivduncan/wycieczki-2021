@@ -10,6 +10,8 @@
     height: 130px;
     display: flex;
     align-items: center;
+
+    box-shadow: 0 0 5px rgba(0,0,0,.5);
 }
 
 #header .wrapper
@@ -33,15 +35,36 @@
     color: var(--orange);
 }
 
-#nav
+/* зліва */
+#nav::before
 {
+    content: '';
+    width: 40px;
+    height: 40px;
+    display: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='currentColor'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z'/%3E%3C/svg%3E");
+}
 
+@media(max-width:1240px)
+{
+    #nav::before
+    {
+        display: block;
+    }
 }
 
 #nav ul
 {
     display: flex;
     gap: 20px;
+}
+
+@media(max-width:1240px)
+{
+    #nav ul
+    {
+        display: none;
+    }
 }
 
 #nav li
@@ -56,14 +79,14 @@
     font-weight: 600;
 }
 
-/**/
+/* +- центр */
 #logo
 {
     width: 130px;
     height: 130px;
 }
 
-/**/
+/* правий блок */
 #header-contact
 {
     display: flex;
@@ -78,7 +101,51 @@
     fill: var(--body-color);
 }
 
+@media(max-width:1240px)
+{
+    #header-contact svg
+    {
+        width: 30px;
+        height: 30px;
+    }    
+}
+
 #header-contact strong 
 {
     letter-spacing: 1px;
+}
+
+/* іконки */
+#mail::before,
+#phone::before 
+{
+    display: none;
+}
+
+@media(max-width:1240px)
+{
+    #mail span,
+    #phone span
+    {
+        display: none;
+    }
+
+    #mail::before,
+    #phone::before
+    {
+        content: '';
+        width: 30px;
+        height: 30px;
+        display: block;
+    }
+
+    #mail::before
+    {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000000' viewBox='0 0 16 16'%3E%3Cpath d='M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z'/%3E%3C/svg%3E");        
+    }
+
+    #phone::before
+    {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='currentColor' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z'/%3E%3C/svg%3E");
+    }
 }

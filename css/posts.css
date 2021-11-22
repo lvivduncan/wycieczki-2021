@@ -17,11 +17,35 @@
     align-items: center;
 }
 
+@media(max-width:600px)
+{
+    .post 
+    {
+        grid-template-columns: 1fr;
+        /* grid-template-rows: repeat(2,auto); */
+        grid-template-areas: 
+            'post-picture'
+            'post-h1'
+            'post-p';        
+    }
+}
+
 .post:nth-child(even)
 {
     grid-template-areas: 
         'post-h1 post-picture'
         'post-p post-picture';
+}
+
+@media(max-width:600px)
+{
+    .post:nth-child(even)
+    {
+        grid-template-areas: 
+            'post-picture'
+            'post-h1'
+            'post-p';
+    }    
 }
 
 .post picture

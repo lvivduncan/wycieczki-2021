@@ -7,6 +7,19 @@
         'gallery-1 gallery-4 gallery-4'
 }
 
+@media(max-width:996px)
+{
+    #gallery
+    {
+        /* display: grid; */
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: 
+            'gallery-1 gallery-1'
+            'gallery-2 gallery-3'
+            'gallery-4 gallery-4'
+    }    
+}
+
 #gallery a 
 {
     overflow: hidden;
